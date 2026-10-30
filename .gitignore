@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.DS_Store
+*.blend1
+*.blend@
+.vite/
+.claude/
+ghost-guide-dist.zip
