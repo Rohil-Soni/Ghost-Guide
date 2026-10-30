@@ -1,0 +1,1031 @@
+[
+ {
+  "id": "main_gate",
+  "name": "Main Gate (A-B Road)",
+  "aliases": [
+   "gate",
+   "entrance",
+   "nh46",
+   "ab road",
+   "security"
+  ],
+  "category": "gate",
+  "chapter": 1,
+  "blockCode": null,
+  "description": "Main entry from the A-B Road (NH-46) through the west roundabout.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -58,
+   0,
+   30
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "lake",
+  "name": "Lake of JUET",
+  "aliases": [
+   "lake",
+   "pond",
+   "talab"
+  ],
+  "category": "landmark",
+  "chapter": 2,
+  "blockCode": null,
+  "description": "The campus lake, ringed by the western loop road.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -32,
+   0,
+   15
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "helipad",
+  "name": "JUET Helipad",
+  "aliases": [
+   "helipad",
+   "helicopter"
+  ],
+  "category": "landmark",
+  "chapter": 2,
+  "blockCode": null,
+  "description": "Helipad pad south-east of the lake.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -21,
+   0,
+   38
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "academic",
+  "name": "Academic Area (block names to confirm)",
+  "aliases": [
+   "academic",
+   "classes",
+   "lt",
+   "lecture",
+   "labs",
+   "department"
+  ],
+  "category": "academic",
+  "chapter": 3,
+  "blockCode": null,
+  "description": "Cluster of academic buildings between the lake and the hostels. Block names, LTs and labs still need to be filled in.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   4,
+   0,
+   28
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "block_central",
+  "name": "Central Block (Cube.028, name to confirm)",
+  "aliases": [],
+  "category": "service",
+  "chapter": 3,
+  "blockCode": null,
+  "description": "Diamond-shaped building at the campus centre. Identity to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   17,
+   0,
+   14
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "annapurna",
+  "name": "Annapurna (Mess)",
+  "aliases": [
+   "mess",
+   "dining",
+   "canteen",
+   "food",
+   "annapurna"
+  ],
+  "category": "food",
+  "chapter": 4,
+  "blockCode": null,
+  "description": "Central dining hall for hostel residents.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   28,
+   0,
+   1
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "block_ne",
+  "name": "North-East Block (Cube.027, name to confirm)",
+  "aliases": [],
+  "category": "service",
+  "chapter": null,
+  "blockCode": null,
+  "description": "Long rectangular building north-east of Annapurna. Identity to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   40,
+   0,
+   -5
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h01",
+  "name": "Boys' Hostel H1",
+  "aliases": [
+   "h1",
+   "hostel 1",
+   "block 1",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H1",
+  "description": "Y-shaped boys' hostel block H1. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -7,
+   0,
+   -5
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h02",
+  "name": "Boys' Hostel H2",
+  "aliases": [
+   "h2",
+   "hostel 2",
+   "block 2",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H2",
+  "description": "Y-shaped boys' hostel block H2. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -3,
+   0,
+   -5
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h03",
+  "name": "Boys' Hostel H3",
+  "aliases": [
+   "h3",
+   "hostel 3",
+   "block 3",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H3",
+  "description": "Y-shaped boys' hostel block H3. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -1,
+   0,
+   -1
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h04",
+  "name": "Boys' Hostel H4",
+  "aliases": [
+   "h4",
+   "hostel 4",
+   "block 4",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H4",
+  "description": "Y-shaped boys' hostel block H4. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   2,
+   0,
+   4
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h05",
+  "name": "Boys' Hostel H5",
+  "aliases": [
+   "h5",
+   "hostel 5",
+   "block 5",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H5",
+  "description": "Y-shaped boys' hostel block H5. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   7,
+   0,
+   4
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h06",
+  "name": "Boys' Hostel H6",
+  "aliases": [
+   "h6",
+   "hostel 6",
+   "block 6",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H6",
+  "description": "Y-shaped boys' hostel block H6. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   8,
+   0,
+   9
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h07",
+  "name": "Boys' Hostel H7",
+  "aliases": [
+   "h7",
+   "hostel 7",
+   "block 7",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H7",
+  "description": "Y-shaped boys' hostel block H7. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   11,
+   0,
+   -5
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h08",
+  "name": "Boys' Hostel H8",
+  "aliases": [
+   "h8",
+   "hostel 8",
+   "block 8",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H8",
+  "description": "Y-shaped boys' hostel block H8. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   16,
+   0,
+   -5
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h09",
+  "name": "Boys' Hostel H9",
+  "aliases": [
+   "h9",
+   "hostel 9",
+   "block 9",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H9",
+  "description": "Y-shaped boys' hostel block H9. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   17,
+   0,
+   -1
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h10",
+  "name": "Boys' Hostel H10",
+  "aliases": [
+   "h10",
+   "hostel 10",
+   "block 10",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H10",
+  "description": "Y-shaped boys' hostel block H10. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   22,
+   0,
+   20
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h11",
+  "name": "Boys' Hostel H11",
+  "aliases": [
+   "h11",
+   "hostel 11",
+   "block 11",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H11",
+  "description": "Y-shaped boys' hostel block H11. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   27,
+   0,
+   20
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h12",
+  "name": "Boys' Hostel H12",
+  "aliases": [
+   "h12",
+   "hostel 12",
+   "block 12",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H12",
+  "description": "Y-shaped boys' hostel block H12. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   28,
+   0,
+   25
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h14",
+  "name": "Boys' Hostel H14",
+  "aliases": [
+   "h14",
+   "hostel 14",
+   "block 14",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H14",
+  "description": "Y-shaped boys' hostel block H14. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   33,
+   0,
+   29
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h15",
+  "name": "Boys' Hostel H15",
+  "aliases": [
+   "h15",
+   "hostel 15",
+   "block 15",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H15",
+  "description": "Y-shaped boys' hostel block H15. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   38,
+   0,
+   29
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h16",
+  "name": "Boys' Hostel H16",
+  "aliases": [
+   "h16",
+   "hostel 16",
+   "block 16",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H16",
+  "description": "Y-shaped boys' hostel block H16. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   39,
+   0,
+   34
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h17",
+  "name": "Boys' Hostel H17",
+  "aliases": [
+   "h17",
+   "hostel 17",
+   "block 17",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H17",
+  "description": "Y-shaped boys' hostel block H17. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   30,
+   0,
+   11
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h18",
+  "name": "Boys' Hostel H18",
+  "aliases": [
+   "h18",
+   "hostel 18",
+   "block 18",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H18",
+  "description": "Y-shaped boys' hostel block H18. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   35,
+   0,
+   11
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h19",
+  "name": "Boys' Hostel H19",
+  "aliases": [
+   "h19",
+   "hostel 19",
+   "block 19",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H19",
+  "description": "Y-shaped boys' hostel block H19. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   37,
+   0,
+   16
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h20",
+  "name": "Boys' Hostel H20",
+  "aliases": [
+   "h20",
+   "hostel 20",
+   "block 20",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H20",
+  "description": "Y-shaped boys' hostel block H20. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   40,
+   0,
+   18
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hostel_h21",
+  "name": "Boys' Hostel H21",
+  "aliases": [
+   "h21",
+   "hostel 21",
+   "block 21",
+   "hostel",
+   "boys hostel"
+  ],
+  "category": "hostel",
+  "chapter": 5,
+  "blockCode": "H21",
+  "description": "Y-shaped boys' hostel block H21. Block-to-number mapping still to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   41,
+   0,
+   22
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "civil_dept",
+  "name": "Department of Civil Engineering",
+  "aliases": [
+   "civil",
+   "ce"
+  ],
+  "category": "academic",
+  "chapter": null,
+  "blockCode": null,
+  "description": "Civil Engineering department, east of the main campus road.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   57,
+   0,
+   17
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "handball",
+  "name": "Handball Court",
+  "aliases": [
+   "handball",
+   "court",
+   "sports"
+  ],
+  "category": "sports",
+  "chapter": 6,
+  "blockCode": null,
+  "description": "Outdoor handball court on the east side.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   55,
+   0,
+   38
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "hall_south",
+  "name": "Large Hall (name to confirm)",
+  "aliases": [
+   "hall",
+   "ground"
+  ],
+  "category": "sports",
+  "chapter": 6,
+  "blockCode": null,
+  "description": "Large white-roofed building south of the central road. Identity to be confirmed.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   18,
+   0,
+   47
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ },
+ {
+  "id": "faculty_res",
+  "name": "Accommodation, JUET (Faculty Residences)",
+  "aliases": [
+   "faculty",
+   "staff quarters",
+   "residences",
+   "accommodation"
+  ],
+  "category": "residential",
+  "chapter": 7,
+  "blockCode": null,
+  "description": "Faculty and staff housing in the south of the campus.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": [
+   -6,
+   0,
+   55
+  ],
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false
+ }
+]

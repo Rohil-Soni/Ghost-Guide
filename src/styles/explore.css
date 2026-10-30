@@ -1,0 +1,68 @@
+/* pins (CSS2DRenderer) */
+.pin {
+  display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px 3px 4px; border-radius: 999px; cursor: pointer;
+  border: 1.5px solid var(--pin); background: rgba(15, 14, 23, 0.82); color: var(--text); font: 600 0.75rem var(--font);
+  white-space: nowrap; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4); transition: transform 0.15s, background 0.15s; position: relative;
+}
+.pin::after {
+  content: ''; position: absolute; left: 50%; bottom: -6px; width: 8px; height: 8px; background: var(--pin);
+  transform: translateX(-50%) rotate(45deg); border-radius: 0 0 2px 0; z-index: -1;
+}
+.pin-icon { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: color-mix(in srgb, var(--pin) 30%, transparent); font-size: 0.8rem; }
+.pin:hover, .pin:focus-visible { transform: translateY(-2px); background: var(--surface-solid); }
+.pin.is-selected { background: var(--accent); border-color: #fff; animation: pulse 1.6s ease-out infinite; }
+.pin--flat { padding: 3px; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(124, 92, 255, 0.7); } 100% { box-shadow: 0 0 0 16px rgba(124, 92, 255, 0); } }
+
+/* layers */
+.layers { position: fixed; left: 20px; bottom: 34px; z-index: 10; display: none; flex-wrap: wrap; gap: 6px; max-width: min(560px, calc(100vw - 40px)); }
+body.mode-explore .layers { display: flex; }
+.layers .chip { background: var(--surface); backdrop-filter: blur(10px); }
+.layers .chip[aria-pressed='false'] { opacity: 0.55; }
+
+/* detail panel */
+.panel {
+  position: fixed; top: 72px; right: 16px; bottom: 34px; z-index: 15; width: min(380px, calc(100vw - 32px)); overflow: auto;
+  background: var(--surface); backdrop-filter: blur(14px); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px;
+  box-shadow: var(--shadow); transform: translateX(30px); opacity: 0; transition: transform 0.35s, opacity 0.35s;
+}
+.panel.is-open { transform: none; opacity: 1; }
+.panel-head { position: relative; padding-right: 44px; }
+.panel-cat { margin: 0; font-size: 0.78rem; font-weight: 600; color: var(--pin); text-transform: uppercase; letter-spacing: 0.05em; }
+.panel-title { margin: 4px 0 8px; font-size: 1.35rem; line-height: 1.2; }
+.panel-close { position: absolute; right: 0; top: 0; }
+.panel-photo { width: 100%; border-radius: 12px; aspect-ratio: 16 / 9; object-fit: cover; }
+.panel p { color: #d9d5ee; font-size: 0.93rem; }
+.panel h3 { font-size: 0.95rem; margin: 0 0 8px; }
+.a11y-card { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: rgba(124, 92, 255, 0.08); margin: 14px 0; }
+.a11y-card dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; font-size: 0.88rem; }
+.a11y-card dt { color: var(--muted); }
+.a11y-card dd { margin: 0; text-align: right; }
+.ok { color: var(--ok); } .no { color: var(--no); } .unk { color: var(--muted); font-style: italic; }
+.directions { display: grid; gap: 10px; }
+.directions label { display: grid; gap: 4px; font-size: 0.85rem; color: var(--muted); }
+.directions label.check { display: flex; align-items: center; gap: 8px; color: var(--text); }
+.directions select { height: 40px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-solid); color: var(--text); padding: 0 10px; font: 0.9rem var(--font); }
+.directions input[type='checkbox'] { width: 18px; height: 18px; accent-color: var(--accent); }
+.directions .row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.route-info {
+  position: fixed; top: 72px; left: 20px; z-index: 12; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  background: var(--surface); backdrop-filter: blur(12px); border: 1px solid var(--accent); border-radius: 999px; padding: 8px 10px 8px 18px;
+  font-size: 0.88rem; box-shadow: var(--shadow); max-width: calc(100vw - 440px);
+}
+.route-info span { color: var(--accent-2); }
+body:not(.mode-explore):not(.mode-fallback) .route-info { display: none; }
+
+.tooltip {
+  position: fixed; left: 0; top: 0; z-index: 25; pointer-events: none; background: var(--surface-solid); border: 1px solid var(--line);
+  padding: 4px 10px; border-radius: 8px; font-size: 0.82rem; white-space: nowrap;
+}
+body:not(.mode-explore) .tooltip { display: none; }
+
+@media (max-width: 760px) {
+  .panel { top: auto; left: 16px; right: 16px; width: auto; bottom: 16px; max-height: 58vh; transform: translateY(30px); }
+  .route-info { top: auto; left: 16px; bottom: calc(58vh + 28px); border-radius: 14px; max-width: calc(100vw - 32px); }
+  .layers { bottom: 30px; left: 16px; flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 32px); padding-bottom: 4px; }
+}
+.route-info[hidden], .tooltip[hidden] { display: none; }

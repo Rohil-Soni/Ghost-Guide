@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ghost Guide · JUET Campus Map</title>
+  <meta name="description" content="Ghost Guide: a 3D scroll tour and searchable accessibility & facility map of the JUET Guna campus." />
+  <meta name="theme-color" content="#0f0e17" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👻%3C/text%3E%3C/svg%3E" />
+</head>
+<body class="mode-loading">
+  <a class="skip-link" href="#directory" data-action="open-directory">Skip 3D tour, go to directory</a>
+
+  <header class="topbar" role="banner">
+    <a class="brand" href="#" data-action="replay-tour" aria-label="Ghost Guide home">
+      <span class="brand-ghost" aria-hidden="true">👻</span>
+      <span class="brand-name">Ghost&nbsp;Guide</span>
+      <span class="brand-sub">JUET</span>
+    </a>
+
+    <div class="search" id="search">
+      <label for="search-input" class="sr-only">Search buildings, rooms and facilities</label>
+      <input id="search-input" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Search: mess, hostel 7, helipad…"
+             role="combobox" aria-expanded="false" aria-controls="search-results" aria-autocomplete="list" />
+      <ul id="search-results" class="search-results" role="listbox" aria-label="Search results" hidden></ul>
+    </div>
+
+    <nav class="topbar-actions" aria-label="Mode">
+      <button type="button" class="btn btn-ghost" data-action="open-directory" aria-controls="directory">Directory</button>
+      <button type="button" class="btn btn-ghost" data-action="replay-tour" id="btn-tour">Tour</button>
+      <button type="button" class="btn" data-action="explore" id="btn-explore">Explore map</button>
+      <button type="button" class="btn btn-icon" id="btn-motion" aria-pressed="false" title="Reduce motion">
+        <span aria-hidden="true">⏸</span><span class="sr-only">Reduce motion</span>
+      </button>
+    </nav>
+  </header>
+
+  <canvas id="webgl" aria-hidden="true"></canvas>
+  <div id="labels" class="labels-layer"></div>
+
+  <main id="tour" aria-label="Campus tour"></main>
+
+  <!-- Explore-mode UI -->
+  <div class="layers" id="layers" role="group" aria-label="Map layers"></div>
+  <aside id="panel" class="panel" aria-live="polite" aria-label="Location details" hidden></aside>
+  <div id="tooltip" class="tooltip" role="presentation" hidden></div>
+  <div id="route-info" class="route-info" role="status" hidden></div>
+
+  <section id="directory" class="directory" aria-labelledby="directory-title" tabindex="-1">
+    <div class="directory-head">
+      <h2 id="directory-title">Building &amp; facility directory</h2>
+      <button type="button" class="btn btn-icon" data-action="close-directory" aria-label="Close directory">✕</button>
+    </div>
+    <div class="chips" id="directory-filters" role="group" aria-label="Filter by category"></div>
+    <div id="directory-list"></div>
+  </section>
+
+  <div id="fallback" class="fallback" hidden>
+    <p><strong>3D view unavailable.</strong> Your browser or device can't run WebGL, so here is the 2D map and the full directory.</p>
+    <div class="fallback-map" id="fallback-map"></div>
+  </div>
+
+  <div id="loader" class="loader" role="status" aria-live="polite">
+    <div class="loader-ghost" aria-hidden="true">👻</div>
+    <p class="loader-text">Summoning the campus… <span id="loader-pct">0%</span></p>
+    <div class="loader-bar"><span id="loader-fill"></span></div>
+    <button type="button" class="btn btn-ghost" data-action="explore">Skip the tour</button>
+  </div>
+
+  <footer class="credits">
+    Ghost Guide · PS14 · Base imagery © Google, Airbus, Maxar Technologies (reference only) ·
+    <a href="mailto:?subject=Ghost%20Guide%20data%20issue">Report a data issue</a>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

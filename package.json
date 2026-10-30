@@ -1,0 +1,23 @@
+{
+  "name": "ghost-guide",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ghost Guide: JUET campus accessibility & facility map (three.js scroll tour + explore mode)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node tools/validate-data.mjs",
+    "optimize": "npx @gltf-transform/cli optimize campus.glb public/models/campus.opt.glb --compress meshopt --texture-compress webp --texture-size 2048"
+  },
+  "dependencies": {
+    "fuse.js": "^7.5.0",
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.27",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

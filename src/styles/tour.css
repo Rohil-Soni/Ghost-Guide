@@ -1,0 +1,30 @@
+#tour { position: relative; z-index: 3; pointer-events: none; }
+body:not(.mode-story) #tour { display: none; }
+.chapter { height: 130vh; }
+
+.card {
+  position: fixed; left: max(24px, 6vw); top: 50%; width: min(440px, calc(100vw - 48px)); pointer-events: auto;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 26px 28px; box-shadow: var(--shadow);
+  backdrop-filter: blur(14px); opacity: 0; visibility: hidden; transform: translate(0, calc(-50% + 40px));
+  transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.5s;
+}
+.card.is-active { opacity: 1; visibility: visible; transform: translate(0, -50%); }
+.card-kicker { margin: 0 0 6px; color: var(--accent-2); font-weight: 600; font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; display: flex; gap: 10px; }
+.card-num { color: var(--muted); }
+.card-title { margin: 0 0 10px; font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.1; letter-spacing: -0.02em; }
+.card-body { margin: 0 0 16px; color: #d9d5ee; }
+.card-cta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 0; }
+.scroll-hint { color: var(--muted); font-size: 0.9rem; animation: float 2s ease-in-out infinite; }
+
+.chapter--hero .card { left: 50%; transform: translate(-50%, calc(-50% + 40px)); text-align: center; width: min(560px, calc(100vw - 32px)); }
+.chapter--hero .card.is-active { transform: translate(-50%, -50%); }
+.chapter--hero .card-kicker, .chapter--hero .card-cta { justify-content: center; }
+.chapter--hero .card-title { font-size: clamp(2.6rem, 7vw, 4.4rem); background: linear-gradient(120deg, #fff, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+@media (max-width: 760px) {
+  .card { left: 16px; right: 16px; width: auto; top: auto; bottom: 24px; transform: translateY(40px); padding: 20px; }
+  .card.is-active { transform: none; }
+  .chapter--hero .card { left: 16px; transform: translateY(40px); }
+  .chapter--hero .card.is-active { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .card { transition: opacity 0.2s; } }
