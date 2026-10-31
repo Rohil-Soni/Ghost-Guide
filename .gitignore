@@ -6,3 +6,4 @@ dist/
 .vite/
 .claude/
 ghost-guide-dist.zip
+.netlify/
