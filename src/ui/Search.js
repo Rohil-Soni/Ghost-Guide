@@ -9,7 +9,7 @@ export function initSearch(locations) {
 
   const docs = [];
   for (const loc of locations) {
-    docs.push({ kind: 'Buildings', locId: loc.id, name: loc.name, aliases: loc.aliases, category: CATEGORIES[loc.category]?.label ?? loc.category, code: loc.blockCode ?? '' });
+    docs.push({ kind: 'Buildings', locId: loc.id, name: loc.name, aliases: [...loc.aliases, ...(loc.subLocations ?? [])], category: CATEGORIES[loc.category]?.label ?? loc.category, code: loc.blockCode ?? '', sub: loc.building ?? undefined });
     for (const floor of loc.floors) for (const r of floor.rooms) {
       docs.push({ kind: 'Rooms', locId: loc.id, name: r.name, code: r.code, aliases: [r.type], sub: `${loc.name} · floor ${floor.level}` });
     }

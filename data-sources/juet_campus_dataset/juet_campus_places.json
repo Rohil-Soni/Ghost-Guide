@@ -1,0 +1,320 @@
+{
+  "dataset_name": "JUET Guna Campus Places",
+  "dataset_version": "1.0.0",
+  "institution": "Jaypee University of Engineering and Technology",
+  "campus": "Guna, Madhya Pradesh, India",
+  "compiled_on": "2026-10-31",
+  "purpose": "Starter location database for a JUET campus guide or navigation project.",
+  "important_data_notes": [
+    "This is a research-based starter dataset, not a surveyed campus GIS map.",
+    "Coordinates are null because reliable individual building coordinates were not established from the available official sources. Do not use null coordinates as map pins.",
+    "Nearby-place links are tagged with evidence and notes. Some are official relationships; some describe a shared route or require on-campus confirmation.",
+    "LT-1 is explicitly identified by JUET as being in Ramanujan Bhavan.",
+    "The official tour lists LT-2, LT-3, LT-4 and LT-5 individually, but the public index does not specify each theatre's Bhawan. They are grouped here as one provisional search target and should be split into separate map points after field verification.",
+    "Registrar Office, VC Office, Board Room and Chancellor Office are grouped as one administrative destination for this starter dataset; their exact building-level arrangement should be verified on campus."
+  ],
+  "sources": [
+    {
+      "source_id": "virtual_tour",
+      "title": "JUET 360-degree Virtual Campus Tour",
+      "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/",
+      "source_type": "official_university_virtual_tour_index",
+      "supports": ["Main Gate", "Nehru Plaza", "Academic Block viewpoints", "LT-2 to LT-5", "Registrar Office", "VC Office", "LRC", "Cafeteria", "Annapurna", "MPH", "Sports Ground", "Boys Hostel", "Girls Hostel", "Tuck Shop", "main-road and mess-pathway wording"]
+    },
+    {
+      "source_id": "lt1_pget_instructions",
+      "title": "JUET PGET-2025 Candidate Instructions",
+      "url": "https://juet.ac.in/jaypee/images/JUET-PGETInstructions.pdf",
+      "source_type": "official_university_document",
+      "supports": ["LT-1 is in Ramanujan Bhavan"]
+    },
+    {
+      "source_id": "brochure_2026",
+      "title": "JUET Admission Brochure 2026 – Learning Resource Centre",
+      "url": "https://www.juet.ac.in/uploads/2026/Brochure2026P1.pdf",
+      "source_type": "official_university_brochure",
+      "supports": ["LRC is in Vishvesvaraya Bhawan", "LRC facilities"]
+    },
+    {
+      "source_id": "shopping_centre",
+      "title": "JUET Shopping Centre",
+      "url": "https://www.juet.ac.in/jaypee/shopping-center",
+      "source_type": "official_university_facilities_page",
+      "supports": ["Tuck shops", "multipurpose shop", "grocery", "bakery", "ice-cream shop", "cafeteria"]
+    },
+    {
+      "source_id": "annapurna",
+      "title": "JUET Annapurna – Student Mess",
+      "url": "https://www.juet.ac.in/jaypee/annapurna.php/",
+      "source_type": "official_university_facilities_page",
+      "supports": ["Separate boys' and girls' mess/dining facilities"]
+    },
+    {
+      "source_id": "hostels",
+      "title": "JUET Hostel Facilities",
+      "url": "https://www.juet.ac.in/jaypee/Hostel.php/",
+      "source_type": "official_university_facilities_page",
+      "supports": ["Separate boys' and girls' hostels", "hostel facilities"]
+    },
+    {
+      "source_id": "tagore_hall",
+      "title": "JUET Multipurpose Hall / Tagore Hall",
+      "url": "https://admission.juet.ac.in/jaypee/cf-acilities",
+      "source_type": "official_university_facilities_page",
+      "supports": ["Multipurpose Hall facilities", "Tagore Hall"]
+    },
+    {
+      "source_id": "aqar_campus_facilities",
+      "title": "JUET Annual Quality Assurance Report 2020-21",
+      "url": "https://juet.ac.in/jaypee/images/AQAR2020-21.pdf",
+      "source_type": "official_university_report",
+      "supports": ["Multipurpose Hall, Sports Ground and open lawn are described as near Nehru Plaza", "three academic blocks are named Ramanujan Bhawan, Raman Bhawan and Vishvesvaraya Bhawan"],
+      "age_note": "Older university report; use for broad campus relationships and re-check current naming/layout on site."
+    }
+  ],
+  "places": [
+    {
+      "id": "main-gate",
+      "name": "Main Gate",
+      "aliases": ["JUET Gate", "Main Entry", "Main Entrance"],
+      "category": "campus_entry",
+      "description": "The main campus entrance used by students, visitors and vehicles to enter JUET.",
+      "building_or_area": "Campus entrance / AB Road side",
+      "where_to_find_it": "At the main entry to the JUET campus. Use it as the starting point for the internal campus road.",
+      "nearby_place_ids": ["shopping-centre-cluster", "hostel-area", "annapurna-mess"],
+      "nearby_notes": "JUET's virtual-tour index describes a main road in front of the Main Entry and hostel, with the Tuck Shop, Cafeteria and a pathway to the Mess along that corridor. This is a shared-route description, not a claim that all facilities are directly beside the gate.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["virtual_tour", "lt1_pget_instructions"]
+    },
+    {
+      "id": "nehru-plaza",
+      "name": "Nehru Plaza",
+      "aliases": ["Nehru Plaza Centre Point", "Centre Point"],
+      "category": "campus_landmark",
+      "description": "A central campus reference point that is useful for orientation and meeting other students.",
+      "building_or_area": "Central campus",
+      "where_to_find_it": "Identified as the campus Centre Point in JUET's official virtual tour.",
+      "nearby_place_ids": ["tagore-hall-mph", "sports-ground"],
+      "nearby_notes": "JUET's 2020-21 AQAR describes the Multipurpose Hall, Sports Ground and open lawn as being near Nehru Plaza. Treat this as a broad nearby relationship; exact walking distances are not published.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["virtual_tour", "aqar_campus_facilities"]
+    },
+    {
+      "id": "academic-blocks",
+      "name": "Academic Block Area",
+      "aliases": ["Academic Blocks", "Academic Block Centre", "Academic Area"],
+      "category": "academic_area",
+      "description": "The main teaching area containing academic buildings, lecture theatres, classrooms, laboratories and departments.",
+      "building_or_area": "Academic block complex",
+      "where_to_find_it": "JUET's virtual tour includes a viewpoint at the front of every Academic Block and a viewpoint at the centre of the Academic Block.",
+      "nearby_place_ids": ["lt-1", "lt-2-to-lt-5", "lrc"],
+      "nearby_notes": "LT-1 is documented in Ramanujan Bhavan; LRC is documented in Vishvesvaraya Bhawan. JUET's older AQAR names Ramanujan Bhawan, Raman Bhawan and Vishvesvaraya Bhawan as its three academic blocks.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["virtual_tour", "lt1_pget_instructions", "brochure_2026", "aqar_campus_facilities"]
+    },
+    {
+      "id": "lt-1",
+      "name": "LT-1",
+      "aliases": ["Lecture Theatre 1", "LT 1"],
+      "category": "lecture_theatre",
+      "description": "A lecture theatre used for academic sessions and examinations. JUET's PGET-2025 instructions explicitly name it as an examination venue.",
+      "building_or_area": "Ramanujan Bhavan",
+      "where_to_find_it": "Inside Ramanujan Bhavan, in the academic block area.",
+      "nearby_place_ids": ["academic-blocks"],
+      "nearby_notes": "The exact entrance, floor and closest neighbouring room are not given in the public source; confirm these on site.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["lt1_pget_instructions", "virtual_tour"]
+    },
+    {
+      "id": "lt-2-to-lt-5",
+      "name": "Lecture Theatres LT-2 to LT-5",
+      "aliases": ["LT-2", "LT 2", "LT-3", "LT 3", "LT-4", "LT 4", "LT-5", "LT 5"],
+      "category": "lecture_theatre_group",
+      "description": "A provisional search group for four lecture-theatre destinations. JUET's virtual-tour index lists LT-2, LT-3, LT-4 and LT-5 as named viewpoints.",
+      "building_or_area": "Academic / theatre area; individual Bhawan assignments not confirmed",
+      "where_to_find_it": "Look in the academic/theatre area and follow the individual LT labels. This record intentionally groups the four names until their separate physical positions are captured.",
+      "sub_location_names": ["LT-2", "LT-3", "LT-4", "LT-5"],
+      "nearby_place_ids": ["academic-blocks"],
+      "nearby_notes": "Do not place all four labels at one coordinate. Split this record into four records once each theatre entrance is confirmed.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["virtual_tour"]
+    },
+    {
+      "id": "lrc",
+      "name": "Learning Resource Centre (LRC)",
+      "aliases": ["Library", "Central Library", "LRC Library"],
+      "category": "library",
+      "description": "The university library and learning resource centre, with books, journals, digital resources and computer access. The 2026 brochure says it can accommodate about 250 users.",
+      "building_or_area": "Vishvesvaraya Bhawan",
+      "where_to_find_it": "Inside Vishvesvaraya Bhawan, one of JUET's academic buildings.",
+      "nearby_place_ids": ["academic-blocks"],
+      "nearby_notes": "The official 2026 brochure confirms the building name. Exact floor and nearest entrance should be confirmed on site.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["brochure_2026", "virtual_tour"]
+    },
+    {
+      "id": "administrative-offices",
+      "name": "Administrative Offices",
+      "aliases": ["Registrar Office", "VC Office", "Vice Chancellor Office", "Board Room", "Chancellor Office"],
+      "category": "administration",
+      "description": "Administrative destination covering the Registrar Office and other senior university offices. The virtual tour separately lists Registrar Office, VC Office, Board Room and Chancellor Office.",
+      "building_or_area": "Administrative area; exact block not confirmed",
+      "where_to_find_it": "Use the Registrar Office as the primary search term. JUET's tour also marks a viewpoint at the ramp in front of the Registrar Office.",
+      "sub_location_names": ["Registrar Office", "VC Office", "Board Room", "Chancellor Office", "Ramp viewpoint in front of Registrar Office"],
+      "nearby_place_ids": [],
+      "nearby_notes": "The public tour index does not specify the exact building relationship or walking distance between these offices. Verify whether they share a block before assigning one pin.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["virtual_tour"]
+    },
+    {
+      "id": "tagore-hall-mph",
+      "name": "Tagore Hall / Multipurpose Hall (MPH)",
+      "aliases": ["Tagore Hall", "MPH", "Multipurpose Hall", "Auditorium"],
+      "category": "event_venue",
+      "description": "A large indoor hall used for university events, cultural programmes, presentations and indoor sports. JUET identifies the facility as Tagore Hall / Multipurpose Hall.",
+      "building_or_area": "Central campus, near Nehru Plaza",
+      "where_to_find_it": "Near Nehru Plaza, according to JUET's 2020-21 AQAR; the official virtual tour labels it as MPH.",
+      "nearby_place_ids": ["nehru-plaza", "sports-ground"],
+      "nearby_notes": "The nearby relationship is supported by the older university AQAR. Exact entrance orientation and distance need on-site verification.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["tagore_hall", "virtual_tour", "aqar_campus_facilities"]
+    },
+    {
+      "id": "sports-ground",
+      "name": "Sports Ground",
+      "aliases": ["Playfield", "Outdoor Sports Ground", "Sports Field"],
+      "category": "sports_recreation",
+      "description": "Outdoor sports area for activities such as football, cricket and other field/court sports. JUET's virtual tour lists a separate Sports Ground viewpoint.",
+      "building_or_area": "Central campus, near Nehru Plaza",
+      "where_to_find_it": "Near Nehru Plaza, according to JUET's 2020-21 AQAR.",
+      "nearby_place_ids": ["nehru-plaza", "tagore-hall-mph"],
+      "nearby_notes": "The nearby relationship is supported by the older university AQAR. The exact sports-field entrance and individual court locations need field verification.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["virtual_tour", "aqar_campus_facilities"]
+    },
+    {
+      "id": "shopping-centre-cluster",
+      "name": "Shopping Centre / Tuck Shops / Cafeteria",
+      "aliases": ["Shopping Centre", "Tuck Shop", "Tuckshop", "Cafeteria", "Grocery Shop", "Multipurpose Shop", "Bakery"],
+      "category": "retail_and_food",
+      "description": "A campus convenience cluster that includes two tuck shops, a multipurpose shop, grocery, bakery, ice-cream shop and cafeteria, according to JUET's facilities page.",
+      "building_or_area": "Main-road corridor in front of the Main Entry and hostel",
+      "where_to_find_it": "Use the main road in front of the Main Entry and hostel. JUET's virtual tour specifically associates this corridor with the Tuck Shop and Cafeteria.",
+      "sub_location_names": ["Tuck Shop 1", "Tuck Shop 2", "Multipurpose Shop", "Grocery Shop", "Bakery", "Ice-Cream Shop", "Cafeteria"],
+      "nearby_place_ids": ["main-gate", "hostel-area", "annapurna-mess"],
+      "nearby_notes": "The tour describes a shared main-road corridor and a pathway to the Mess; it does not prove that every shop is directly beside the gate or Mess. Verify the exact shop-by-shop layout on site.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["shopping_centre", "virtual_tour"]
+    },
+    {
+      "id": "annapurna-mess",
+      "name": "Annapurna Student Mess",
+      "aliases": ["Annapurna", "Boys Mess", "Girls Mess", "Student Mess"],
+      "category": "dining",
+      "description": "JUET's student dining facility. The university states that separate Annapurna messes are established for boys and girls, serving students and employees.",
+      "building_or_area": "Mess complex; approach via the main-road pathway",
+      "where_to_find_it": "Follow the pathway to the Mess mentioned in JUET's virtual-tour description of the main road in front of the Main Entry and hostel.",
+      "sub_location_names": ["Boys' Annapurna", "Girls' Annapurna"],
+      "nearby_place_ids": ["main-gate", "hostel-area", "shopping-centre-cluster"],
+      "nearby_notes": "The virtual-tour index confirms a pathway to the Mess from the main-road corridor. The precise position of the boys' and girls' dining entrances should be verified separately.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["annapurna", "virtual_tour"]
+    },
+    {
+      "id": "hostel-area",
+      "name": "Hostel Area (Boys' and Girls' Hostels)",
+      "aliases": ["Boys Hostel", "Girls Hostel", "Hostel 6", "Hostel Cluster"],
+      "category": "residential",
+      "description": "Student residential area with separate boys' and girls' hostel facilities. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; the virtual tour includes Boys Hostel, Girls Hostel and a rear view of Hostel 6.",
+      "building_or_area": "Hostel-side campus road and residential clusters",
+      "where_to_find_it": "JUET's virtual tour identifies the main road in front of the hostel and separate viewpoints for Boys Hostel and Girls Hostel.",
+      "sub_location_names": ["Boys Hostel Blocks", "Girls Hostel", "Back of Hostel 6"],
+      "nearby_place_ids": ["shopping-centre-cluster", "annapurna-mess", "main-gate"],
+      "nearby_notes": "The tour places the Tuck Shop, Cafeteria and Mess pathway on the main-road corridor in front of the Main Entry and hostel. Confirm the exact route to each hostel block and the girls' hostel separately.",
+      "coordinates": {"latitude": null, "longitude": null},
+      "coordinate_status": "pending_on_site_capture",
+      "field_verified": false,
+      "source_ids": ["hostels", "virtual_tour", "annapurna"]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "nehru-plaza",
+      "to": "tagore-hall-mph",
+      "relation": "near",
+      "evidence_level": "official_report",
+      "note": "JUET's 2020-21 AQAR describes the Multipurpose Hall as near Nehru Plaza."
+    },
+    {
+      "from": "nehru-plaza",
+      "to": "sports-ground",
+      "relation": "near",
+      "evidence_level": "official_report",
+      "note": "JUET's 2020-21 AQAR describes the Sports Ground as near Nehru Plaza."
+    },
+    {
+      "from": "main-gate",
+      "to": "shopping-centre-cluster",
+      "relation": "same_main_road_corridor",
+      "evidence_level": "official_virtual_tour",
+      "note": "The virtual tour describes the road in front of the Main Entry and hostel as including the Tuck Shop and Cafeteria."
+    },
+    {
+      "from": "main-gate",
+      "to": "hostel-area",
+      "relation": "same_main_road_corridor",
+      "evidence_level": "official_virtual_tour",
+      "note": "The virtual tour labels the main road in front of the Main Entry and hostel."
+    },
+    {
+      "from": "main-gate",
+      "to": "annapurna-mess",
+      "relation": "pathway_from_main_road",
+      "evidence_level": "official_virtual_tour",
+      "note": "The virtual tour description mentions a pathway to the Mess from this main-road corridor."
+    },
+    {
+      "from": "academic-blocks",
+      "to": "lt-1",
+      "relation": "contains",
+      "evidence_level": "official_document",
+      "note": "LT-1 is listed at Ramanujan Bhavan in JUET's PGET-2025 instructions."
+    },
+    {
+      "from": "academic-blocks",
+      "to": "lrc",
+      "relation": "contains_building",
+      "evidence_level": "official_brochure",
+      "note": "LRC is located in Vishvesvaraya Bhawan according to the 2026 JUET brochure."
+    },
+    {
+      "from": "academic-blocks",
+      "to": "lt-2-to-lt-5",
+      "relation": "academic_area_association",
+      "evidence_level": "official_virtual_tour",
+      "note": "The virtual-tour index labels LT-2 to LT-5; individual building assignments are not supplied."
+    }
+  ]
+}

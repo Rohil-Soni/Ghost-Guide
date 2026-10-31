@@ -15,7 +15,7 @@ export class Pins {
     this.selected = null;
     this.v = new THREE.Vector3();
 
-    for (const loc of locations) {
+    for (const loc of locations.filter((l) => l.anchorV)) {
       const cat = CATEGORIES[loc.category] || CATEGORIES.service;
       const el = document.createElement('button');
       el.type = 'button';

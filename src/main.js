@@ -129,12 +129,15 @@ async function boot() {
   function focusLocation(id, { instant = reducedMotion } = {}) {
     const loc = byId.get(id);
     if (!loc) return;
-    sm.highlight([id]);
-    pins.setSelected(id);
+    const target = loc.mapLoc?.id ?? null;
+    sm.highlight(target ? [target] : []);
+    pins.setSelected(target);
     bus.emit('panel:open', id);
     setLocHash(id);
     bus.emit('directory:close');
-    rig.flyTo(shotFor(loc), { instant, onDone: invalidate });
+    const shot = shotFor(loc);
+    if (shot) rig.flyTo(shot, { instant, onDone: invalidate });
+    else invalidate();
   }
 
   function clearRoute() {
@@ -162,7 +165,7 @@ async function boot() {
       return invalidate();
     }
     const box = routeLine.show(r.points);
-    sm.highlight([from, to]);
+    sm.highlight([byId.get(from).mapLoc.id, byId.get(to).mapLoc.id]);
     info.innerHTML = `<strong>${byId.get(from).name} → ${byId.get(to).name}</strong>
       <span>${Math.round(r.metres / 10) * 10} m · ~${walkMinutes(r.metres, accessible)} min ${accessible ? '♿ step-free' : 'walk'}</span>
       <button type="button" class="btn btn-ghost btn-small" data-action="clear-route">Clear</button>`;
@@ -290,7 +293,7 @@ function fallback2D(locations) {
   const w = GROUND.maxX - GROUND.minX, d = GROUND.maxY - GROUND.minY;
   map.style.aspectRatio = `${w} / ${d}`;
   map.style.backgroundImage = `url(${import.meta.env.BASE_URL}fallback/campus-2d.webp)`;
-  map.innerHTML = locations.map((l) => {
+  map.innerHTML = locations.filter((l) => l.anchor).map((l) => {
     const left = ((l.anchor[0] - GROUND.minX) / w) * 100;
     const top = ((GROUND.maxY + l.anchor[2]) / d) * 100;
     const cat = CATEGORIES[l.category] || CATEGORIES.service;

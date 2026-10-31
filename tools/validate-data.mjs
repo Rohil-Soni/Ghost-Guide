@@ -18,12 +18,16 @@ for (const l of locations) {
   if (ids.has(l.id)) errors.push(`duplicate location id "${l.id}"`);
   ids.add(l.id);
   if (!/^[a-z0-9_]+$/.test(l.id)) errors.push(`location id "${l.id}" should be lower_snake_case`);
-  if (!Array.isArray(l.anchor) || l.anchor.length !== 3) errors.push(`${l.id}: anchor must be [x, y, z]`);
+  if (l.anchor !== null && (!Array.isArray(l.anchor) || l.anchor.length !== 3)) errors.push(`${l.id}: anchor must be [x, y, z] or null`);
+  if (l.anchor === null && !l.parent) warnings.push(`${l.id}: no map position yet (listed and searchable, no pin)`);
+  for (const n of l.nearby ?? []) if (!locations.some((x) => x.id === n)) errors.push(`${l.id}: nearby "${n}" is not a location`);
   for (const k of ['stepFreeEntrance', 'ramp', 'lift', 'accessibleWashroom']) {
     if (!(k in (l.accessibility || {}))) errors.push(`${l.id}: accessibility.${k} missing`);
   }
   if (Object.values(l.accessibility || {}).every((v) => v === null)) warnings.push(`${l.id}: accessibility not surveyed`);
 }
+
+for (const l of locations) if (l.parent && !locations.some((x) => x.id === l.parent && x.anchor)) errors.push(`${l.id}: parent "${l.parent}" missing or has no anchor`);
 
 for (const c of chapters) {
   for (const id of c.locationIds) if (!ids.has(id)) errors.push(`chapter ${c.id} references unknown location "${id}"`);

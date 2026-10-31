@@ -1,0 +1,9 @@
+from_place_id,to_place_id,relation,evidence_level,note
+nehru-plaza,tagore-hall-mph,near,official_report,"JUET's 2020-21 AQAR describes the Multipurpose Hall as near Nehru Plaza."
+nehru-plaza,sports-ground,near,official_report,"JUET's 2020-21 AQAR describes the Sports Ground as near Nehru Plaza."
+main-gate,shopping-centre-cluster,same_main_road_corridor,official_virtual_tour,"The virtual tour describes the road in front of the Main Entry and hostel as including the Tuck Shop and Cafeteria."
+main-gate,hostel-area,same_main_road_corridor,official_virtual_tour,"The virtual tour labels the main road in front of the Main Entry and hostel."
+main-gate,annapurna-mess,pathway_from_main_road,official_virtual_tour,"The virtual tour description mentions a pathway to the Mess from this main-road corridor."
+academic-blocks,lt-1,contains,official_document,"LT-1 is listed at Ramanujan Bhavan in JUET's PGET-2025 instructions."
+academic-blocks,lrc,contains_building,official_brochure,"LRC is located in Vishvesvaraya Bhawan according to the 2026 JUET brochure."
+academic-blocks,lt-2-to-lt-5,academic_area_association,official_virtual_tour,"The virtual-tour index labels LT-2 to LT-5; individual building assignments are not supplied."

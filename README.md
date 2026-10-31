@@ -108,6 +108,8 @@ All content is data-driven, so **adding or fixing a location needs no code chang
 4. **Paths** go in `public/data/nav.json`. Add `{"stairs": true}` or `{"unpaved": true}` to an edge so step-free routing avoids it or penalises it.
 5. Run `npm run validate`, then commit and push.
 
+Researched place data lives in `data-sources/juet_campus_dataset/`. After updating it, run `node tools/import-juet-dataset.mjs` to merge it into `locations.json`. The importer keeps map positions and fills in names, aliases, where-to-find notes, nearby links and source citations. Places without coordinates are listed and searchable, but get no pin until their position is captured.
+
 ## 🧊 Using the real Blender model
 
 The site currently shows a **procedural stand-in campus** (`src/core/ProceduralCampus.js`), traced from the top-down footprint of `Jaypee_Map.blend`. Once a real model is exported, it is picked up automatically:
@@ -130,8 +132,10 @@ npx netlify-cli deploy --prod --dir dist
 
 Entries tagged **draft** on the site are placeholders until the campus survey is done:
 
-- [ ] Hostel block ↔ H-number mapping (and whether H13 exists), girls' hostel location
-- [ ] Library/LRC, Admin block, Tagore Hall, academic block names, LTs and labs
+- [ ] Hostel block ↔ H-number mapping (JUET lists 21 blocks; the model has 20, with no H13)
+- [x] Sourced details for Main Gate, Nehru Plaza, Academic Blocks (Ramanujan, Raman, Vishvesvaraya Bhawan), LT-1, LT-2 to LT-5, LRC, Admin Offices, Tagore Hall/MPH, Sports Ground, Shopping Centre, Annapurna and the Hostel Area ([dataset](data-sources/juet_campus_dataset/README.md))
+- [ ] Map positions for Nehru Plaza, Tagore Hall/MPH, Sports Ground, Shopping Centre, Admin Offices, Hostel Area and the girls' hostel (listed and searchable, but no pin yet)
+- [ ] Separate pins for LT-1, LT-2…LT-5 and the LRC (currently shown at the Academic Block Area)
 - [ ] Health centre, ATM/bank, shops, gym and sports grounds
 - [ ] Identify the North-East Block, Central Block and Large Hall
 - [ ] Accessibility survey for every building (entrances, ramps, lifts, washrooms, water points)

@@ -112,7 +112,8 @@ body.mode-story #btn-tour, body.mode-explore #btn-explore { display: none; }
 .dir-cat { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 18px 0 6px; }
 .dir-count { opacity: 0.6; }
 .dir-item { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 6px; background: rgba(255, 255, 255, 0.02); }
-.dir-item summary { cursor: pointer; padding: 10px 12px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.dir-item summary { cursor: pointer; padding: 10px 12px; display: flex; align-items: center; gap: 6px; }
+.dir-name { flex: 1; }
 .dir-body { padding: 0 12px 12px; font-size: 0.9rem; }
 .dir-body ul { padding-left: 18px; margin: 4px 0; }
 .dir-floor { font-weight: 600; margin: 8px 0 0; }

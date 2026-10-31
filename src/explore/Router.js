@@ -17,9 +17,11 @@ export class Router {
 
   // Entrance nodes for a location, or the nearest plain node to its anchor.
   nodesFor(locId) {
-    const ents = [...this.nodes.keys()].filter((k) => k.startsWith(`ent_${locId}_`));
+    const loc = this.byId.get(locId)?.mapLoc;
+    if (!loc) return [];
+    const ents = [...this.nodes.keys()].filter((k) => k.startsWith(`ent_${loc.id}_`));
     if (ents.length) return ents;
-    const a = this.byId.get(locId)?.anchorV;
+    const a = loc.anchorV;
     if (!a) return [];
     let best = null, bd = Infinity;
     for (const [k, p] of this.nodes) {
@@ -65,7 +67,7 @@ export class Router {
     while (came.has(keys[0])) keys.unshift(came.get(keys[0]));
     const points = keys.map((k) => this.nodes.get(k).clone());
     // start/end at the building anchors when the graph node is only "nearest"
-    const a = this.byId.get(fromId).anchorV, b = this.byId.get(toId).anchorV;
+    const a = this.byId.get(fromId).mapLoc.anchorV, b = this.byId.get(toId).mapLoc.anchorV;
     if (!keys[0].startsWith('ent_')) points.unshift(a.clone());
     if (!keys.at(-1).startsWith('ent_')) points.push(b.clone());
     let units = 0;

@@ -66,3 +66,17 @@ body:not(.mode-explore) .tooltip { display: none; }
   .layers { bottom: 30px; left: 16px; flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 32px); padding-bottom: 4px; }
 }
 .route-info[hidden], .tooltip[hidden] { display: none; }
+
+/* places from the JUET dataset: map status, where-to-find, nearby, sources */
+.panel-building { margin: -4px 0 8px; color: var(--muted) !important; font-size: 0.85rem !important; }
+.map-note { border-left: 3px solid var(--accent); padding: 8px 12px; background: rgba(124, 92, 255, 0.1); border-radius: 0 10px 10px 0; font-size: 0.86rem !important; }
+.panel-block { margin: 14px 0; }
+.panel-block p { margin: 0; }
+.pill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.pill-list li { border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; background: rgba(255, 255, 255, 0.04); }
+.panel-block .chip { font-size: 0.78rem; }
+.small { font-size: 0.8rem !important; }
+.sources { margin-top: 14px; font-size: 0.82rem; color: var(--muted); }
+.sources summary { cursor: pointer; }
+.sources ul { padding-left: 18px; margin: 6px 0 0; }
+.sources li { margin-bottom: 4px; }

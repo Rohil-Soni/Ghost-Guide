@@ -7,3 +7,4 @@ dist/
 .claude/
 ghost-guide-dist.zip
 .netlify/
+*.zip

@@ -1,8 +1,11 @@
 [
  {
   "id": "main_gate",
-  "name": "Main Gate (A-B Road)",
+  "name": "Main Gate",
   "aliases": [
+   "juet gate",
+   "main entry",
+   "main entrance",
    "gate",
    "entrance",
    "nh46",
@@ -12,7 +15,7 @@
   "category": "gate",
   "chapter": 1,
   "blockCode": null,
-  "description": "Main entry from the A-B Road (NH-46) through the west roundabout.",
+  "description": "The main campus entrance used by students, visitors and vehicles to enter JUET.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -31,7 +34,27 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "building": "Campus entrance / AB Road side",
+  "whereToFind": "At the main entry to the JUET campus. Use it as the starting point for the internal campus road.",
+  "subLocations": [],
+  "nearby": [
+   "shopping_centre",
+   "hostel_area",
+   "annapurna"
+  ],
+  "nearbyNotes": "JUET's virtual-tour index describes a main road in front of the Main Entry and hostel, with the Tuck Shop, Cafeteria and a pathway to the Mess along that corridor. This is a shared-route description, not a claim that all facilities are directly beside the gate.",
+  "sources": [
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET PGET-2025 Candidate Instructions",
+    "url": "https://juet.ac.in/jaypee/images/JUET-PGETInstructions.pdf"
+   }
+  ],
+  "gps": null
  },
  {
   "id": "lake",
@@ -98,8 +121,11 @@
  },
  {
   "id": "academic",
-  "name": "Academic Area (block names to confirm)",
+  "name": "Academic Block Area",
   "aliases": [
+   "academic blocks",
+   "academic block centre",
+   "academic area",
    "academic",
    "classes",
    "lt",
@@ -110,7 +136,7 @@
   "category": "academic",
   "chapter": 3,
   "blockCode": null,
-  "description": "Cluster of academic buildings between the lake and the hostels. Block names, LTs and labs still need to be filled in.",
+  "description": "The main teaching area containing academic buildings, lecture theatres, classrooms, laboratories and departments.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -129,7 +155,35 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "building": "Academic block complex",
+  "whereToFind": "JUET's virtual tour includes a viewpoint at the front of every Academic Block and a viewpoint at the centre of the Academic Block.",
+  "subLocations": [],
+  "nearby": [
+   "lt_1",
+   "lt_2_to_5",
+   "lrc"
+  ],
+  "nearbyNotes": "LT-1 is documented in Ramanujan Bhavan; LRC is documented in Vishvesvaraya Bhawan. JUET's older AQAR names Ramanujan Bhawan, Raman Bhawan and Vishvesvaraya Bhawan as its three academic blocks.",
+  "sources": [
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET PGET-2025 Candidate Instructions",
+    "url": "https://juet.ac.in/jaypee/images/JUET-PGETInstructions.pdf"
+   },
+   {
+    "title": "JUET Admission Brochure 2026 – Learning Resource Centre",
+    "url": "https://www.juet.ac.in/uploads/2026/Brochure2026P1.pdf"
+   },
+   {
+    "title": "JUET Annual Quality Assurance Report 2020-21",
+    "url": "https://juet.ac.in/jaypee/images/AQAR2020-21.pdf"
+   }
+  ],
+  "gps": null
  },
  {
   "id": "block_central",
@@ -161,18 +215,21 @@
  },
  {
   "id": "annapurna",
-  "name": "Annapurna (Mess)",
+  "name": "Annapurna Student Mess",
   "aliases": [
+   "annapurna",
+   "boys mess",
+   "girls mess",
+   "student mess",
    "mess",
    "dining",
    "canteen",
-   "food",
-   "annapurna"
+   "food"
   ],
   "category": "food",
   "chapter": 4,
   "blockCode": null,
-  "description": "Central dining hall for hostel residents.",
+  "description": "JUET's student dining facility. The university states that separate Annapurna messes are established for boys and girls, serving students and employees.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -191,7 +248,30 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "building": "Mess complex; approach via the main-road pathway",
+  "whereToFind": "Follow the pathway to the Mess mentioned in JUET's virtual-tour description of the main road in front of the Main Entry and hostel.",
+  "subLocations": [
+   "Boys' Annapurna",
+   "Girls' Annapurna"
+  ],
+  "nearby": [
+   "main_gate",
+   "hostel_area",
+   "shopping_centre"
+  ],
+  "nearbyNotes": "The virtual-tour index confirms a pathway to the Mess from the main-road corridor. The precise position of the boys' and girls' dining entrances should be verified separately.",
+  "sources": [
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   }
+  ],
+  "gps": null
  },
  {
   "id": "block_ne",
@@ -234,7 +314,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H1",
-  "description": "Y-shaped boys' hostel block H1. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H1. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -253,7 +333,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h02",
@@ -268,7 +366,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H2",
-  "description": "Y-shaped boys' hostel block H2. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H2. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -287,7 +385,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h03",
@@ -302,7 +418,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H3",
-  "description": "Y-shaped boys' hostel block H3. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H3. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -321,7 +437,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h04",
@@ -336,7 +470,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H4",
-  "description": "Y-shaped boys' hostel block H4. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H4. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -355,7 +489,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h05",
@@ -370,7 +522,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H5",
-  "description": "Y-shaped boys' hostel block H5. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H5. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -389,7 +541,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h06",
@@ -404,7 +574,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H6",
-  "description": "Y-shaped boys' hostel block H6. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H6. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -423,7 +593,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h07",
@@ -438,7 +626,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H7",
-  "description": "Y-shaped boys' hostel block H7. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H7. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -457,7 +645,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h08",
@@ -472,7 +678,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H8",
-  "description": "Y-shaped boys' hostel block H8. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H8. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -491,7 +697,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h09",
@@ -506,7 +730,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H9",
-  "description": "Y-shaped boys' hostel block H9. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H9. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -525,7 +749,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h10",
@@ -540,7 +782,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H10",
-  "description": "Y-shaped boys' hostel block H10. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H10. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -559,7 +801,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h11",
@@ -574,7 +834,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H11",
-  "description": "Y-shaped boys' hostel block H11. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H11. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -593,7 +853,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h12",
@@ -608,7 +886,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H12",
-  "description": "Y-shaped boys' hostel block H12. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H12. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -627,7 +905,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h14",
@@ -642,7 +938,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H14",
-  "description": "Y-shaped boys' hostel block H14. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H14. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -661,7 +957,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h15",
@@ -676,7 +990,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H15",
-  "description": "Y-shaped boys' hostel block H15. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H15. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -695,7 +1009,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h16",
@@ -710,7 +1042,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H16",
-  "description": "Y-shaped boys' hostel block H16. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H16. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -729,7 +1061,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h17",
@@ -744,7 +1094,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H17",
-  "description": "Y-shaped boys' hostel block H17. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H17. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -763,7 +1113,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h18",
@@ -778,7 +1146,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H18",
-  "description": "Y-shaped boys' hostel block H18. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H18. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -797,7 +1165,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h19",
@@ -812,7 +1198,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H19",
-  "description": "Y-shaped boys' hostel block H19. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H19. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -831,7 +1217,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h20",
@@ -846,7 +1250,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H20",
-  "description": "Y-shaped boys' hostel block H20. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H20. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -865,7 +1269,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "hostel_h21",
@@ -880,7 +1302,7 @@
   "category": "hostel",
   "chapter": 5,
   "blockCode": "H21",
-  "description": "Y-shaped boys' hostel block H21. Block-to-number mapping still to be confirmed.",
+  "description": "Y-shaped boys' hostel block H21. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; which physical block carries which number is still to be confirmed on site.",
   "hours": null,
   "floors": [],
   "accessibility": {
@@ -899,7 +1321,25 @@
   "shot": null,
   "photos": [],
   "contact": null,
-  "verified": false
+  "verified": false,
+  "nearby": [
+   "annapurna",
+   "shopping_centre"
+  ],
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ]
  },
  {
   "id": "civil_dept",
@@ -1027,5 +1467,461 @@
   "photos": [],
   "contact": null,
   "verified": false
+ },
+ {
+  "id": "nehru_plaza",
+  "name": "Nehru Plaza",
+  "aliases": [
+   "nehru plaza centre point",
+   "centre point"
+  ],
+  "category": "landmark",
+  "chapter": null,
+  "blockCode": null,
+  "description": "A central campus reference point that is useful for orientation and meeting other students.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Central campus",
+  "whereToFind": "Identified as the campus Centre Point in JUET's official virtual tour.",
+  "subLocations": [],
+  "nearby": [
+   "tagore_hall",
+   "sports_ground"
+  ],
+  "nearbyNotes": "JUET's 2020-21 AQAR describes the Multipurpose Hall, Sports Ground and open lawn as being near Nehru Plaza. Treat this as a broad nearby relationship; exact walking distances are not published.",
+  "sources": [
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annual Quality Assurance Report 2020-21",
+    "url": "https://juet.ac.in/jaypee/images/AQAR2020-21.pdf"
+   }
+  ],
+  "gps": null
+ },
+ {
+  "id": "lt_1",
+  "name": "LT-1",
+  "aliases": [
+   "lecture theatre 1",
+   "lt 1"
+  ],
+  "category": "academic",
+  "chapter": null,
+  "blockCode": null,
+  "description": "A lecture theatre used for academic sessions and examinations. JUET's PGET-2025 instructions explicitly name it as an examination venue.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Ramanujan Bhavan",
+  "whereToFind": "Inside Ramanujan Bhavan, in the academic block area.",
+  "subLocations": [],
+  "nearby": [
+   "academic"
+  ],
+  "nearbyNotes": "The exact entrance, floor and closest neighbouring room are not given in the public source; confirm these on site.",
+  "sources": [
+   {
+    "title": "JUET PGET-2025 Candidate Instructions",
+    "url": "https://juet.ac.in/jaypee/images/JUET-PGETInstructions.pdf"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   }
+  ],
+  "parent": "academic",
+  "gps": null
+ },
+ {
+  "id": "lt_2_to_5",
+  "name": "Lecture Theatres LT-2 to LT-5",
+  "aliases": [
+   "lt-2",
+   "lt 2",
+   "lt-3",
+   "lt 3",
+   "lt-4",
+   "lt 4",
+   "lt-5",
+   "lt 5"
+  ],
+  "category": "academic",
+  "chapter": null,
+  "blockCode": null,
+  "description": "A provisional search group for four lecture-theatre destinations. JUET's virtual-tour index lists LT-2, LT-3, LT-4 and LT-5 as named viewpoints.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Academic / theatre area; individual Bhawan assignments not confirmed",
+  "whereToFind": "Look in the academic/theatre area and follow the individual LT labels. This record intentionally groups the four names until their separate physical positions are captured.",
+  "subLocations": [
+   "LT-2",
+   "LT-3",
+   "LT-4",
+   "LT-5"
+  ],
+  "nearby": [
+   "academic"
+  ],
+  "nearbyNotes": "Do not place all four labels at one coordinate. Split this record into four records once each theatre entrance is confirmed.",
+  "sources": [
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   }
+  ],
+  "parent": "academic",
+  "gps": null
+ },
+ {
+  "id": "lrc",
+  "name": "Learning Resource Centre (LRC)",
+  "aliases": [
+   "library",
+   "central library",
+   "lrc library"
+  ],
+  "category": "academic",
+  "chapter": null,
+  "blockCode": null,
+  "description": "The university library and learning resource centre, with books, journals, digital resources and computer access. The 2026 brochure says it can accommodate about 250 users.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Vishvesvaraya Bhawan",
+  "whereToFind": "Inside Vishvesvaraya Bhawan, one of JUET's academic buildings.",
+  "subLocations": [],
+  "nearby": [
+   "academic"
+  ],
+  "nearbyNotes": "The official 2026 brochure confirms the building name. Exact floor and nearest entrance should be confirmed on site.",
+  "sources": [
+   {
+    "title": "JUET Admission Brochure 2026 – Learning Resource Centre",
+    "url": "https://www.juet.ac.in/uploads/2026/Brochure2026P1.pdf"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   }
+  ],
+  "parent": "academic",
+  "gps": null
+ },
+ {
+  "id": "admin_offices",
+  "name": "Administrative Offices",
+  "aliases": [
+   "registrar office",
+   "vc office",
+   "vice chancellor office",
+   "board room",
+   "chancellor office"
+  ],
+  "category": "admin",
+  "chapter": null,
+  "blockCode": null,
+  "description": "Administrative destination covering the Registrar Office and other senior university offices. The virtual tour separately lists Registrar Office, VC Office, Board Room and Chancellor Office.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Administrative area; exact block not confirmed",
+  "whereToFind": "Use the Registrar Office as the primary search term. JUET's tour also marks a viewpoint at the ramp in front of the Registrar Office.",
+  "subLocations": [
+   "Registrar Office",
+   "VC Office",
+   "Board Room",
+   "Chancellor Office",
+   "Ramp viewpoint in front of Registrar Office"
+  ],
+  "nearby": [],
+  "nearbyNotes": "The public tour index does not specify the exact building relationship or walking distance between these offices. Verify whether they share a block before assigning one pin.",
+  "sources": [
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   }
+  ],
+  "gps": null
+ },
+ {
+  "id": "tagore_hall",
+  "name": "Tagore Hall / Multipurpose Hall (MPH)",
+  "aliases": [
+   "tagore hall",
+   "mph",
+   "multipurpose hall",
+   "auditorium"
+  ],
+  "category": "venue",
+  "chapter": null,
+  "blockCode": null,
+  "description": "A large indoor hall used for university events, cultural programmes, presentations and indoor sports. JUET identifies the facility as Tagore Hall / Multipurpose Hall.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Central campus, near Nehru Plaza",
+  "whereToFind": "Near Nehru Plaza, according to JUET's 2020-21 AQAR; the official virtual tour labels it as MPH.",
+  "subLocations": [],
+  "nearby": [
+   "nehru_plaza",
+   "sports_ground"
+  ],
+  "nearbyNotes": "The nearby relationship is supported by the older university AQAR. Exact entrance orientation and distance need on-site verification.",
+  "sources": [
+   {
+    "title": "JUET Multipurpose Hall / Tagore Hall",
+    "url": "https://admission.juet.ac.in/jaypee/cf-acilities"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annual Quality Assurance Report 2020-21",
+    "url": "https://juet.ac.in/jaypee/images/AQAR2020-21.pdf"
+   }
+  ],
+  "gps": null
+ },
+ {
+  "id": "sports_ground",
+  "name": "Sports Ground",
+  "aliases": [
+   "playfield",
+   "outdoor sports ground",
+   "sports field"
+  ],
+  "category": "sports",
+  "chapter": null,
+  "blockCode": null,
+  "description": "Outdoor sports area for activities such as football, cricket and other field/court sports. JUET's virtual tour lists a separate Sports Ground viewpoint.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Central campus, near Nehru Plaza",
+  "whereToFind": "Near Nehru Plaza, according to JUET's 2020-21 AQAR.",
+  "subLocations": [],
+  "nearby": [
+   "nehru_plaza",
+   "tagore_hall"
+  ],
+  "nearbyNotes": "The nearby relationship is supported by the older university AQAR. The exact sports-field entrance and individual court locations need field verification.",
+  "sources": [
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annual Quality Assurance Report 2020-21",
+    "url": "https://juet.ac.in/jaypee/images/AQAR2020-21.pdf"
+   }
+  ],
+  "gps": null
+ },
+ {
+  "id": "shopping_centre",
+  "name": "Shopping Centre / Tuck Shops / Cafeteria",
+  "aliases": [
+   "shopping centre",
+   "tuck shop",
+   "tuckshop",
+   "cafeteria",
+   "grocery shop",
+   "multipurpose shop",
+   "bakery"
+  ],
+  "category": "shops",
+  "chapter": null,
+  "blockCode": null,
+  "description": "A campus convenience cluster that includes two tuck shops, a multipurpose shop, grocery, bakery, ice-cream shop and cafeteria, according to JUET's facilities page.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Main-road corridor in front of the Main Entry and hostel",
+  "whereToFind": "Use the main road in front of the Main Entry and hostel. JUET's virtual tour specifically associates this corridor with the Tuck Shop and Cafeteria.",
+  "subLocations": [
+   "Tuck Shop 1",
+   "Tuck Shop 2",
+   "Multipurpose Shop",
+   "Grocery Shop",
+   "Bakery",
+   "Ice-Cream Shop",
+   "Cafeteria"
+  ],
+  "nearby": [
+   "main_gate",
+   "hostel_area",
+   "annapurna"
+  ],
+  "nearbyNotes": "The tour describes a shared main-road corridor and a pathway to the Mess; it does not prove that every shop is directly beside the gate or Mess. Verify the exact shop-by-shop layout on site.",
+  "sources": [
+   {
+    "title": "JUET Shopping Centre",
+    "url": "https://www.juet.ac.in/jaypee/shopping-center"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   }
+  ],
+  "gps": null
+ },
+ {
+  "id": "hostel_area",
+  "name": "Hostel Area (Boys' and Girls' Hostels)",
+  "aliases": [
+   "boys hostel",
+   "girls hostel",
+   "hostel 6",
+   "hostel cluster"
+  ],
+  "category": "hostel",
+  "chapter": null,
+  "blockCode": null,
+  "description": "Student residential area with separate boys' and girls' hostel facilities. JUET's hostel page lists 21 boys' hostel blocks and a separate girls' hostel; the virtual tour includes Boys Hostel, Girls Hostel and a rear view of Hostel 6.",
+  "hours": null,
+  "floors": [],
+  "accessibility": {
+   "stepFreeEntrance": null,
+   "ramp": null,
+   "lift": null,
+   "accessibleWashroom": null,
+   "notes": null
+  },
+  "pois": [],
+  "anchor": null,
+  "shot": null,
+  "photos": [],
+  "contact": null,
+  "verified": false,
+  "building": "Hostel-side campus road and residential clusters",
+  "whereToFind": "JUET's virtual tour identifies the main road in front of the hostel and separate viewpoints for Boys Hostel and Girls Hostel.",
+  "subLocations": [
+   "Boys Hostel Blocks",
+   "Girls Hostel",
+   "Back of Hostel 6"
+  ],
+  "nearby": [
+   "shopping_centre",
+   "annapurna",
+   "main_gate"
+  ],
+  "nearbyNotes": "The tour places the Tuck Shop, Cafeteria and Mess pathway on the main-road corridor in front of the Main Entry and hostel. Confirm the exact route to each hostel block and the girls' hostel separately.",
+  "sources": [
+   {
+    "title": "JUET Hostel Facilities",
+    "url": "https://www.juet.ac.in/jaypee/Hostel.php/"
+   },
+   {
+    "title": "JUET 360-degree Virtual Campus Tour",
+    "url": "https://admission.juet.ac.in/jaypee/tour6/app-files/"
+   },
+   {
+    "title": "JUET Annapurna – Student Mess",
+    "url": "https://www.juet.ac.in/jaypee/annapurna.php/"
+   }
+  ],
+  "gps": null
  }
 ]
